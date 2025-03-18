@@ -9,8 +9,14 @@ let inputAmigo = document.getElementById("amigo");
 let listaAmigos = [];
 let ulListaAmigos = document.getElementById("listaAmigos");
 function agregarAmigo() {
-    listaAmigos.push(inputAmigo.value);
-    ulListaAmigos.innerHTML += inputAmigo.value;
+    if (inputAmigo, value === "") {
+        alert("Debes ingresar un nombre");
+    }
+    else {
+        listaAmigos.push(inputAmigo.value);
+        ulListaAmigos.innerHTML += `<li>${inputAmigo.value}</li>`;
+    }
+
 }
 
 function sortearAmigo() {
