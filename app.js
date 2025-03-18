@@ -5,5 +5,15 @@
 //eventos
 //objetos
 
-let listaAmigos = [];
 let inputAmigo = document.getElementById("amigo");
+let listaAmigos = [];
+let ulListaAmigos = document.getElementById("listaAmigos");
+function agregarAmigo() {
+    listaAmigos.push(inputAmigo.value);
+    ulListaAmigos.innerHTML += inputAmigo.value;
+}
+
+function sortearAmigo() {
+
+}
+
